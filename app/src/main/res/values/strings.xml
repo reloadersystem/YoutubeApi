@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YoutubeApi</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="SelectVideoToPlay">Seleccione un Video para Reproducir</string>
+</resources>
