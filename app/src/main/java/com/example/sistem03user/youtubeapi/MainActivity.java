@@ -10,6 +10,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, YouTubePlayer.PlaybackEventListener {
 
     YouTubePlayerView youTubePlayerView;
@@ -35,10 +38,19 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
         if(!fueRestaurado)
         {
-            String idvideo="";
-           // youTubePlayer.cueVideo("t0qvmN03KE");
-            youTubePlayer.cueVideo("RHcUU085kZc");
-            //youTubePlayer.cueVideo("KyryaqFotGQ&t=6s");
+
+            //youTubePlayer.cueVideo("RHcUU085kZc");
+            //youTubePlayer.loadVideo("RHcUU085kZc");
+
+            //Usa una lista de videos de  youtube x el id
+//            List<String> videoList= new ArrayList<>();
+//            videoList.add("RHcUU085kZc");
+//            videoList.add("AK-BL5g6ETk");
+//            videoList.add("x5fAvIsN1UA");
+//            youTubePlayer.loadVideos(videoList);
+
+
+          youTubePlayer.loadPlaylist("PL6dvGWNWC1Uga4podWHHnSZQDyBFOsdhM");
 
         }
 
